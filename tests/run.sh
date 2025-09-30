@@ -56,4 +56,4 @@ fi
 source "${CACHE_DIR}/functions.sh"
 
 # --- delegate to harness runner ---
-run_manual_acceptance_tests "$@"
+run_shell_acceptance_tests "$@"

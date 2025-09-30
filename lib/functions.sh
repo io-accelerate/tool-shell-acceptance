@@ -245,12 +245,12 @@ sanitize_session_name() {
   local cleaned
   cleaned="$(printf '%s' "$raw" | tr -cd 'A-Za-z0-9+=,.@-')"
   if [[ -z "$cleaned" ]]; then
-    cleaned="manual-acceptance"
+    cleaned="shell-acceptance"
   fi
   printf '%s' "${cleaned:0:64}"
 }
 
-run_manual_acceptance_tests() {
+run_shell_acceptance_tests() {
   local using_default_suite=0
   local -a tests=()
 
@@ -272,7 +272,7 @@ run_manual_acceptance_tests() {
   fi
 
   if (( ${#tests[@]} == 0 )); then
-    printf 'No manual acceptance tests found\n' >&2
+    printf 'No shell acceptance tests found\n' >&2
     return 1
   fi
 
@@ -313,5 +313,5 @@ run_manual_acceptance_tests() {
     fi
   done
 
-  printf '✅ All selected manual acceptance tests passed.\n'
+  printf '✅ All selected shell acceptance tests passed.\n'
 }
