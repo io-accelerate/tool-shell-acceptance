@@ -1,0 +1,5 @@
+# Remote distribution URL
+distributionUrl=<path to the downloadable functions.sh>
+
+# Instead of distributionUrl, point to local lib folder
+# localLib=../lib
