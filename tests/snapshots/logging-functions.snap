@@ -1,0 +1,7 @@
+[DEBUG] Debug message when LOG_LEVEL=debug
+[INFO] Informational message
+[WARN] Something worth warning about
+[ERROR] An error occurred
+
+[STEP 1] Logging step output
+⚙️ [CMD] echo hello\ from\ log_cmd 
