@@ -11,4 +11,5 @@ printf '%s\n' \\
   '12:34:56.789 [runner] STEP Running command' \\
   '12:34:56.790 [runner] INFO Completed action 1234567890123456' \\
   'Attachment ID: 202012311234567890' \\
+  'Timestamp: 20251009T141912Z' \\
   'Secret token: dGhpc2lzYXZlcnlsb25nZ2FsbGllZHVzZWN1cmV0ZXh0'"
